@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide Promoted Twitter Tweets
 // @namespace    https://spin.rip/
-// @version      1.0
+// @version      1.1
 // @description  Hide promoted tweets across Twitter!
 // @author       Spinfal
 // @match        https://twitter.com/*
@@ -27,7 +27,7 @@
                 const promotedTweetAmount = promotedTweets.length;
 
                 if (promotedTweetAmount > 0) {
-                    promotedTweets.forEach(i => i?.parentNode.remove());
+                    promotedTweets.forEach(i => i.remove());
                     totalPromotedTweetAmount = totalPromotedTweetAmount + promotedTweetAmount;
                     document.getElementById("hiddenTweetCounter").innerText = totalPromotedTweetAmount > 1000 ? `${totalPromotedTweetAmount.toString().substring(0,1)}k+ promoted tweets hidden` : `${totalPromotedTweetAmount.toString()} ${totalPromotedTweetAmount == 1 ? "promoted tweet" : "promoted tweets"} hidden`; // if you get to 1k promoted tweets hidden, you have a problem.
                 }
