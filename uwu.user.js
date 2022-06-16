@@ -4,7 +4,7 @@
 // @description:en Enable Developer Feature(e.x. Experiments) in Discord
 // @author waki285
 // @version 1.1.0
-// @match *.discord.com/*
+// @include *.discord.com/*
 // @exclude support.discord.com/*
 // @exclude support-dev.discord.com/*
 // @namespace https://greasyfork.org/users/585161
