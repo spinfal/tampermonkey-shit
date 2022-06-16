@@ -8,8 +8,10 @@
 // @exclude support.discord.com/*
 // @exclude support-dev.discord.com/*
 // @namespace https://greasyfork.org/users/585161
+// @run-at  document-end
 // ==/UserScript==
 
+alert("owo");
 Object.defineProperty(
   (
     webpackChunkdiscord_app.push(
